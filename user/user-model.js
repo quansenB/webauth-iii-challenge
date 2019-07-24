@@ -2,12 +2,12 @@ const db = require('../database/dbConfig')
 
 module.exports = {
     add,
-    find,
+    GetAllUsers,
     findBy,
     findById,
 }
 
-function find() {
+function getAllUsers() {
     return db ('user')
     .select('id', 'username', 'password')
 }
